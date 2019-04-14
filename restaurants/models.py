@@ -16,3 +16,9 @@ class Product(models.Model):
 	name	 = models.CharField(max_length=100, blank=True, default='Название')
 	price	 = models.IntegerField()
 	category = models.IntegerField()
+	image	 = models.ImageField(
+			null=True, blank=True,
+			upload_to='images/',
+			verbose_name='Изображение',
+			help_text='Ширина и высота 800x400px'
+			)
