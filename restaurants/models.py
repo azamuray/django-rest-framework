@@ -11,6 +11,11 @@ class Restaurant(models.Model):
     title 	  = models.CharField(max_length=100, blank=True, default='Название')
     longitude = models.FloatField(max_length=100)
     latitude  = models.FloatField(max_length=100)
+    image	 = models.ImageField(
+			null=True, blank=True,
+			upload_to='images/',
+			verbose_name='Изображение'
+			)
 
 class Product(models.Model):
 	name	 = models.CharField(max_length=100, blank=True, default='Название')
@@ -19,6 +24,5 @@ class Product(models.Model):
 	image	 = models.ImageField(
 			null=True, blank=True,
 			upload_to='images/',
-			verbose_name='Изображение',
-			help_text='Ширина и высота 800x400px'
+			verbose_name='Изображение'
 			)

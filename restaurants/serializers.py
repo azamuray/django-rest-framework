@@ -5,7 +5,7 @@ from restaurants.models import Restaurant, Product, LANGUAGE_CHOICES, STYLE_CHOI
 class RestaurantSerializer(serializers.ModelSerializer):
     class Meta:
         model = Restaurant
-        fields = ('id', 'title', 'longitude', 'latitude')
+        fields = ('id', 'title', 'longitude', 'latitude', 'image')
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
