@@ -1,0 +1,4 @@
+*.pyc
+myprojectenv
+/static
+__pycache__
