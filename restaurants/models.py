@@ -11,3 +11,8 @@ class Restaurant(models.Model):
     title 	  = models.CharField(max_length=100, blank=True, default='Название')
     longitude = models.FloatField(max_length=100)
     latitude  = models.FloatField(max_length=100)
+
+class Product(models.Model):
+	name	 = models.CharField(max_length=100, blank=True, default='Название')
+	price	 = models.IntegerField()
+	category = models.IntegerField()
